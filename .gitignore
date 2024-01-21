@@ -1,0 +1,4 @@
+src/config/creds.py
+__pycache__
+/src/sessions/*
+src/data/*
