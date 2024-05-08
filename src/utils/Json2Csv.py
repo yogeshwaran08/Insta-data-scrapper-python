@@ -13,8 +13,8 @@ class Json2Csv:
                 data = json.load(json_file)
         except Exception as e:
             print("Error occured in reading json file", e)
-            return -1 
-                
+            return -1
+        
         if(len(data) <= 0):
             return 1
         
@@ -26,3 +26,7 @@ class Json2Csv:
         except Exception as e:
             print("Error occured in writing csv file", e)
             return -1 
+
+jsonpath = "../data/temp/topchefcookingstudio_followers_datajson.json"
+csvpath = "../data/temp/topchefcookingstudio_followers_datajson.csv"
+obj = Json2Csv(csvpath=csvpath,jsonpath=jsonpath)
